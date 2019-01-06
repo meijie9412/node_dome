@@ -21,7 +21,7 @@ router.post('/signin',async (ctx,next) => {
     if(name=="meijie"&&password=="123456"){
         ctx.response.body=`<h1>welcome ${name}</h1>`;
     }else{
-        ctx.response.body=`<h1>signin failed</p>
+        ctx.response.body=`<h1>signin failed</h1>
         <p><a href="/">try again</a></p>`
     }
 })
