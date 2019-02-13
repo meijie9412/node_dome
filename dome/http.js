@@ -1,10 +1,21 @@
+// const http = require('http');
+
+// var server = http.createServer((request,response)=>{
+//     console.log(request.method+':'+request.url);
+//     response.writeHead(200,{'content-type':'text/html'});
+//     response.end('<h1>node.js</h1>');
+// })
+
+// server.listen(8080);
 const http = require('http');
 
-var server = http.createServer((request,response)=>{
-    console.log(request.method+':'+request.url);
-    response.writeHead(200,{'content-type':'text/html'});
-    response.end('<h1>node.js</h1>');
-})
+const server = http.createServer(
+    (request,response) => {
+        console.log(request.method+':'+request.url);
+        response.writeHead(200,{'content-type':'text/html'});
+        response.end('<h1>meijie and yangshiqi</h1>')
+    }
+);
 
 server.listen(8080);
 
